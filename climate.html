@@ -5,17 +5,119 @@
   <title>Climate Change Awareness</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
+    /* Climate Page Heading Colors */
+h1 {
+  color: #d84315; /* Fiery Orange */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #006064; /* Deep Teal */
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ff8f00; /* Amber */
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: #4e342e; /* Earth Brown */
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff3e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #d84315;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  color: #ffe0b2;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.climate-theme {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.animated-box {
+  background-color: #e0f7fa;
+  border-left: 8px solid #00838f;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background-color: #ffe0b2;
+  font-style: italic;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #f57f17;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.badge.urgent { background-color: #d32f2f; }
+.badge.warning { background-color: #f57c00; }
+.badge.alert { background-color: #7b1fa2; }
+.badge.caution { background-color: #0288d1; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 <body>
   <header>
     <h1>🌡️ Climate Change Awareness</h1>
+    <p>Understand the crisis, its effects, and how we can protect our planet</p>
+
     <nav> <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
       <button><a href="gallery.html">Gallery</a>
@@ -26,28 +128,71 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
   </nav>
   </header>
 
-  <section class="info">
-    <h1>What is Climate Change?</h1>
-    <p><h3>Climate change refers to rising global temperatures due to pollution and greenhouse gases. It causes floods, droughts, and extreme weather.</h3></p>
+<b>
+  <section class="climate-theme">
+    <div class="animated-box">
+      <h2>🌍 What is Climate Change?</h2>
+      <p>
+        <span class="highlight">Climate change</span> means long-term shifts in temperature and weather patterns. It’s caused by <span class="highlight">greenhouse gases</span> like CO₂ from cars, factories, and deforestation. India faces <span class="highlight">heatwaves</span>, <span class="highlight">floods</span>, and <span class="highlight">droughts</span> due to this crisis.
+      </p>
+    </div>
 
-    <h1>How to Fight It</h1>
-    <ul>
-      <li><h3>Use public transport or cycle</h3></li>
-      <li><h3>Save electricity and fuel</h3></li>
-      <li><h3>Support clean energy</h3></li>
-    </ul>
-  </section>
+    <div class="animated-box">
+      <h2>🔥 Causes of Climate Change</h2>
+      <ul>
+        <li><span class="badge urgent">Fossil Fuels</span> – Coal, oil, and gas release CO₂</li>
+        <li><span class="badge warning">Deforestation</span> – Fewer trees to absorb carbon</li>
+        <li><span class="badge alert">Pollution</span> – Smoke from vehicles and factories</li>
+        <li><span class="badge caution">Overconsumption</span> – Wasteful energy and plastic use</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🌪️ Effects on Earth</h2>
+      <ul>
+        <li><span class="badge urgent">Extreme Weather</span> – More floods, storms, and heatwaves</li>
+        <li><span class="badge warning">Melting Ice</span> – Glaciers and polar ice disappearing</li>
+        <li><span class="badge alert">Rising Sea Levels</span> – Coastal areas at risk</li>
+        <li><span class="badge caution">Health Risks</span> – Breathing issues and heat strokes</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🎓 Classroom Projects</h2>
+      <ul>
+        <li><span class="highlight">Carbon Footprint Calculator</span> – Track your daily impact</li>
+        <li><span class="highlight">Climate Debate</span> – Discuss solutions in class</li>
+        <li><span class="highlight">Greenhouse Model</span> – Show how heat gets trapped</li>
+        <li><span class="highlight">Climate Art</span> – Posters, poems, and stories</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>✅ What You Can Do</h2>
+      <ul>
+        <li><span class="highlight">Use public transport</span> or cycle to reduce emissions</li>
+        <li><span class="highlight">Save electricity</span> — switch off when not needed</li>
+        <li><span class="highlight">Plant trees</span> — they cool the planet</li>
+        <li><span class="highlight">Speak up</span> — awareness is the first step</li>
+      </ul>
+    </div>
+
+    <div class="animated-box quote-box">
+      <p>“Climate change is real, and it’s happening now. Let’s act before it’s too late.”</p>
+    
+    </div>
+  </section></b>
+
 
 
 <video autoplay muted loop id="bg-video">
   <source src= "istockphoto-1480154567-640_adpp_is.mp4"type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
   <footer>
     <p><h3>Act now to cool the planet 🌡️</h3></p>
   </footer>

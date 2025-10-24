@@ -5,17 +5,122 @@
   <title>Wildlife Protection</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
+    
+    /* Wildlife Page Heading Colors */
+h1 {
+  color: #1b5e20; /* Jungle Green */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #4e342e; /* Earth Brown */
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ff6f00; /* Tiger Orange */
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: #2e7d32; /* Forest Green */
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f8e9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  color: #c8e6c9;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wildlife-theme {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.animated-box {
+  background-color: #e8f5e9;
+  border-left: 8px solid #66bb6a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background-color: #c8e6c9;
+  font-style: italic;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #558b2f;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.badge.urgent { background-color: #d32f2f; }
+.badge.warning { background-color: #f57c00; }
+.badge.alert { background-color: #7b1fa2; }
+.badge.caution { background-color: #0288d1; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
 </head>
 <body>
   <header>
     <h1>🐾 Wildlife Protection</h1>
+    <p>Protecting animals, forests, and biodiversity for a better future</p>
+    <nav>
+
     <nav> <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
       <button><a href="gallery.html">Gallery</a>
@@ -26,28 +131,72 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
     </nav>
   </header>
 
-  <section class="info">
-    <h1>Why Wildlife Matters</h1>
-    <p><h3>Animals maintain balance in nature. Losing species affects food chains and ecosystems.</h3></p>
 
-    <h1>How to Help</h1>
-    <ul>
-      <li><h3>Don’t buy products made from animal parts</h3></li>
-      <li><h3>Support wildlife sanctuaries</h3></li>
-      <li><h3>Spread awareness about endangered species</h3></li>
-    </ul>
-  </section>
+<b>
+  <section class="wildlife-theme">
+    <div class="animated-box">
+      <h2>🌿 What is Wildlife Conservation?</h2>
+      <p>
+        <span class="highlight">Wildlife conservation</span> means protecting animals, birds, and their natural habitats. It helps maintain <span class="highlight">biodiversity</span>, supports <span class="highlight">ecosystems</span>, and saves endangered species like <span class="highlight">tigers</span>, <span class="highlight">elephants</span>, and <span class="highlight">rhinos</span>.
+      </p>
+    </div>
 
-  <video autoplay muted loop id="bg-video">
+    <div class="animated-box">
+      <h2>🚨 Threats to Wildlife</h2>
+      <ul>
+        <li><span class="badge urgent">Poaching</span> – Illegal hunting for skin, horns, and bones</li>
+        <li><span class="badge warning">Habitat Loss</span> – Forests cut down for farming and cities</li>
+        <li><span class="badge alert">Pollution</span> – Plastic and chemicals harm animals</li>
+        <li><span class="badge caution">Climate Change</span> – Rising temperatures affect migration and breeding</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🌍 Why It Matters</h2>
+      <ul>
+        <li><span class="highlight">Balance in Nature</span> – Each species plays a role in the ecosystem</li>
+        <li><span class="highlight">Medicinal Value</span> – Many plants and animals help in medicine</li>
+        <li><span class="highlight">Cultural Importance</span> – Animals are part of Indian heritage</li>
+        <li><span class="highlight">Tourism & Jobs</span> – Forests and sanctuaries support livelihoods</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🎓 School Activities</h2>
+      <ul>
+        <li><span class="highlight">Poster Making</span> – “Protect Tigers, Save Forests”</li>
+        <li><span class="highlight">Wildlife Quiz</span> – Learn facts about Indian animals</li>
+        <li><span class="highlight">Sanctuary Visit</span> – Explore nature and learn from experts</li>
+        <li><span class="highlight">Adopt an Animal</span> – Symbolic adoption to support rescue centers</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>✅ What You Can Do</h2>
+      <ul>
+        <li><span class="highlight">Say No to Animal Products</span> – Avoid leather, ivory, etc.</li>
+        <li><span class="highlight">Support Sanctuaries</span> – Donate or volunteer</li>
+        <li><span class="highlight">Reduce Plastic</span> – Keep habitats clean</li>
+        <li><span class="highlight">Spread Awareness</span> – Share facts and stories</li>
+      </ul>
+    </div>
+
+    <div class="animated-box quote-box">
+      <p>“Every creature deserves a home. Let’s protect wildlife before it’s too late.”</p>
+      
+
+    </div>
+  </section></b>
+
+<video autoplay muted loop id="bg-video">
   <source src="https://cdn.pixabay.com/video/2023/01/04/145320-786403437_large.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-  <footer>
+ <footer>
     <p><h3>Save animals, save nature 🐾</h3></p>
   </footer>
 </body>

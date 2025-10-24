@@ -2,22 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Donate to Save Earth</title>
+  <title>Support the Cause</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
-  </style>
+  
+<style>
+/* Donate Page Heading Colors */
+h1 {
+  color: #000000; /* Trust Green */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #fbc02d; /* Donation Gold */
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #0288d1; /* Sky Blue */
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: #6d4c41; /* Earth Brown */
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f8e9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  color: #c8e6c9;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.donate-theme {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.animated-box {
+  background-color: #e8f5e9;
+  border-left: 8px solid #8bc34a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background-color: #dcedc8;
+  font-style: italic;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #f57f17;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.badge.urgent { background-color: #d32f2f; }
+.badge.warning { background-color: #f57c00; }
+.badge.alert { background-color: #7b1fa2; }
+.badge.caution { background-color: #0288d1; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+
 </head>
 <body>
   <header>
-    <h1>💚 Donate to Save Earth</h1>
+    <h1>💸 Support the Eco Cause</h1>
+    <p>Small help, big impact — donate, share, or volunteer</p>
     <nav>
-      <button> <a href="index.html">Home</a></button>
+     <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
       <button><a href="gallery.html">Gallery</a>
       </button>
@@ -27,40 +131,56 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
     </nav>
   </header>
+<b>
+  <section class="donate-theme">
+    <div class="animated-box">
+      <h2>🌱 Why Support Matters</h2>
+      <p>
+        <span class="highlight">Eco projects</span> need funds and volunteers to grow. Whether it’s <span class="highlight">planting trees</span>, <span class="highlight">saving animals</span>, or <span class="highlight">cleaning rivers</span>, your support makes a difference.
+      </p>
+    </div>
 
-  <section class="donate-section">
-    <h1>🌍<mark> Why Your Donation Matters</mark></h1>
-    <p>
-      <h2>Har chhoti madad ek bada farq laa sakti hai. Jab hum ped lagate hain, plastic kam karte hain, ya awareness failate hain — tabhi dharti bachi rehti hai. Teri donation se hum aur zyada logon tak pahunch sakte hain, aur naye eco-projects shuru kar sakte hain.</h2>
-    </p>
+    <div class="animated-box">
+      <h2>🎯 Where Your Help Goes</h2>
+      <ul>
+        <li><span class="badge urgent">Tree Plantation</span> – ₹50 = 1 tree sapling</li>
+        <li><span class="badge warning">Wildlife Rescue</span> – ₹100 = food & care for injured animals</li>
+        <li><span class="badge alert">Water Projects</span> – ₹200 = clean water for 1 family</li>
+        <li><span class="badge caution">Climate Education</span> – ₹500 = awareness kits for schools</li>
+      </ul>
+    </div>
 
-    <h1>🙏<mark> How You Can Help</mark></h1>
-    <ul>
-      <li><h2>₹50 – Plant 1 tree</h2></li>
-      <li><h2>₹100 – Eco-awareness posters for schools</h2></li>
-      <li><h2>₹500 – Support a full clean-up drive</h2></li>
-    </ul>
+    <div class="animated-box">
+      <h2>✅ How You Can Help</h2>
+      <ul>
+        <li><span class="highlight">Donate online</span> to trusted eco-NGOs</li>
+        <li><span class="highlight">Share this site</span> with friends and family</li>
+        <li><span class="highlight">Volunteer</span> for clean-up drives or tree planting</li>
+        <li><span class="highlight">Create awareness</span> through posters and reels</li>
+      </ul>
+    </div>
 
-    <h1>📲<mark>Scan & Donate</mark></h1>
-    <p><h2>Apne phone se QR code scan karo aur apna eco-support bhejo. Har ₹1 bhi dharti ke liye valuable hai!</h2></p>
+    <div class="animated-box">
+      <h2>📦 Suggested NGOs & Platforms</h2>
+      <ul>
+        <li><span class="highlight">Grow-Trees.com</span> – Plant trees in India</li>
+        <li><span class="highlight">WWF India</span> – Wildlife protection</li>
+        <li><span class="highlight">WaterAid India</span> – Clean water access</li>
+        <li><span class="highlight">GiveIndia.org</span> – Verified donation platform</li>
+      </ul>
+    </div>
 
-    <img src="b40d99c5-176f-4ece-a414-60abad049a15.jpg" alt="Donate QR Code" class="qr-code">
-
-    <p class="thank-you">Thank you for caring 💚</p>
-  </section>
-  <video autoplay muted loop id="bg-video">
-  <source src="istockphoto-1395065721-640_adpp_is.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-<p class="credit">credit: istockphoto</p>
+    <div class="animated-box quote-box">
+      <p>“Even ₹50 can grow a tree. Let’s give back to nature — one drop, one rupee, one act at a time.”</p>
+    
+    </div>
+  </section></b>
 
   <footer>
-    <p><h2>Made by Sarthak | Eco Campaign Project</h2></p>
+    <p>Made by Vansh | Eco Awareness Project 💚</p>
   </footer>
 </body>
 </html>

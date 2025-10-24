@@ -5,13 +5,104 @@
   <title>Nature Gallery</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
-  </style>
+ /* 🖼️ Nature Gallery Page Style */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e8f5e9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e7d32; /* Forest Green */
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav button {
+  background-color: #66bb6a;
+  border: none;
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: #388e3c;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.img-card {
+  background-color: #f1f8e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.img-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #81c784;
+}
+
+.img-card h2 {
+  font-size: 1.2em;
+  color: #33691e;
+  padding: 10px;
+  margin: 0;
+}
+
+footer {
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ </style>
 </head>
 <body>
   <header>
@@ -27,11 +118,10 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
     </nav>
   </header>
-
-  <section class="gallery">
+<section class="gallery">
     <div class="img-card">
       <img src="https://thumbs.dreamstime.com/b/man-green-forest-464335.jpg" alt="Forest">
       <p><h2>Green forests keep our air clean 🌲</h2></p>
@@ -49,8 +139,7 @@
       <p><h2>Flowers bring color and joy 🌸</h2></p>
     </div>
   </section>
-
-  <footer>
+ <footer>
     <p><h1>Enjoy nature, protect nature 💚</h1></p>
   </footer>
 </body>

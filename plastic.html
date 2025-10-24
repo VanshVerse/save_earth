@@ -5,17 +5,127 @@
   <title>Plastic Waste Awareness</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
+   /* Plastic Page Heading Colors */
+h1 {
+  color: #01579b; /* Deep Blue */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #00695c; /* Ocean Teal */
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ef6c00; /* Coral Orange */
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: #455a64; /* Grey Blue */
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #01579b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #bbdefb;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plastic-theme {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.animated-box {
+  background-color: #e0f7fa;
+  border-left: 8px solid #00acc1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background-color: #b2ebf2;
+  font-style: italic;
+  text-align: center;
+}
+
+.animated-box ul {
+  padding-left: 20px;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #f57f17;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.badge.urgent { background-color: #d32f2f; }
+.badge.warning { background-color: #f57c00; }
+.badge.alert { background-color: #7b1fa2; }
+.badge.caution { background-color: #0288d1; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    
   </style>
 </head>
 <body>
   <header>
     <h1>🚯 Plastic Waste Awareness</h1>
+    <p>Understand the problem, its impact, and how we can reduce plastic waste</p>
     <nav> <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
       <button><a href="gallery.html">Gallery</a>
@@ -26,30 +136,64 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
   </nav>
   </header>
+<b>
+  <section class="plastic-theme">
+    <div class="animated-box">
+      <h2>🔍 What is Plastic Pollution?</h2>
+      <p>
+        <span class="highlight">Plastic pollution</span> means plastic waste ending up in oceans, streets, and landfills. It doesn’t decompose and harms <span class="highlight">animals</span>, <span class="highlight">soil</span>, and even <span class="highlight">human health</span>.
+      </p>
+    </div>
 
-  <section class="info">
-    <h1>Why Plastic is Harmful</h1>
-    <p><h3>Plastic takes hundreds of years to decompose. It pollutes oceans, harms animals, and clogs drains.</h3></p>
+    <div class="animated-box">
+      <h2>🧨 Causes of Plastic Pollution</h2>
+      <ul>
+        <li><span class="badge urgent">Single-use Plastics</span> – Bottles, bags, straws</li>
+        <li><span class="badge warning">Packaging Waste</span> – Food wrappers, delivery boxes</li>
+        <li><span class="badge alert">Lack of Recycling</span> – Plastic dumped instead of reused</li>
+        <li><span class="badge caution">Microplastics</span> – Tiny particles in water and food</li>
+      </ul>
+    </div>
 
-    <h1>What You Can Do</h1>
-    <ul>
-      <li><h3>Use cloth bags instead of plastic</h3></li>
-      <li><h3>Say no to single-use plastics</h3></li>
-      <li><h3>Recycle plastic waste properly</h3></li>
-    </ul>
+    <div class="animated-box">
+      <h2>🌍 Impact on Nature</h2>
+      <ul>
+        <li><span class="badge urgent">Ocean Life</span> – Turtles, fish eat plastic and suffer</li>
+        <li><span class="badge warning">Soil Toxicity</span> – Plastic chemicals harm crops</li>
+        <li><span class="badge alert">Human Health</span> – Microplastics enter our food chain</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>✅ What You Can Do</h2>
+      <ul>
+        <li><span class="highlight">Say No to Plastic Bags</span> — Use cloth or jute bags</li>
+        <li><span class="highlight">Carry Steel Bottles</span> — Avoid plastic bottles</li>
+        <li><span class="highlight">Join Clean-Up Drives</span> — Help remove plastic from streets</li>
+        <li><span class="highlight">Spread Awareness</span> — Posters, reels, and school campaigns</li>
+      </ul>
+    </div>
+
+    <div class="animated-box quote-box">
+      <p>“Plastic is not fantastic — it’s tragic for nature. Let’s reduce, reuse, and refuse.”</p>
+    </div>
   </section>
+
+
+
+
+</b>
+
+
 
 <video autoplay muted loop id="bg-video">
   <source src= "istockphoto-1129528570-640_adpp_is.mp4"type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-
-
-  <footer>
+ <footer>
     <p><h3>Say no to plastic, save the planet 🚯</h3></p>
   </footer>
 </body>

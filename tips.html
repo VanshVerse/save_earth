@@ -6,11 +6,107 @@
   <link rel="stylesheet" href="style.css">
   <style>
     mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
+      background-color: black;
+      color: yellow;
       padding: 2px 4px;
       border-radius: 4px;
     }
+
+/* 🌍 Tips Page Styling */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fbe7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #689f38; /* Earthy Green */
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav button {
+  background-color: #aed581;
+  border: none;
+  margin: 5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: #558b2f;
+}
+
+.tips {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f1f8e9;
+  border-left: 6px solid #8bc34a;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #33691e;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.1em;
+  color: #4e342e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+footer {
+  background-color: #558b2f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   </style>
 </head>
 <body>
@@ -27,34 +123,43 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
     </nav>
   </header>
 
 <section class="tips">
   <div class="card">
-    <h2>1.<mark> Use less plastic</mark></h2>
-    <p><h3>Plastic pollution is one of the biggest threats to our environment. Single-use plastics like bags, bottles, and straws end up in oceans and harm marine life. By choosing reusable items and saying no to plastic, we can reduce waste and protect nature.</h3></p>
+ <h2>1.<mark> Use less plastic</mark></h2>
+ <p><h3>Plastic pollution is one of the biggest threats to our environment.
+  Single-use plastics like bags, bottles, and straws end up in oceans and harm marine life.
+By choosing reusable items and saying no to plastic, we can reduce waste and protect nature.</h3></p>
   </div>
 
   <div class="card">
-    <h2>2.<mark> Plant more trees</mark></h2>
-    <p><h3>Trees are the lungs of our planet. They absorb carbon dioxide, release oxygen, and provide shelter to countless species. Planting even one tree can make a difference — it cools the air, prevents soil erosion, and supports biodiversity.</h3></p>
+<h2>2.<mark> Plant more trees</mark></h2>
+<p><h3>Trees are the lungs of our planet. They absorb carbon dioxide, release oxygen,
+and provide shelter to countless species. Planting even one tree can make a difference — it cools the air,
+prevents soil erosion, and supports biodiversity.</h3></p>
   </div>
-
-  <div class="card">
+<div class="card">
     <h2>3.<mark> Save water and electricity</mark></h2>
-    <p><h3>Water and energy are precious resources. Simple habits like turning off taps, fixing leaks, and switching off lights when not needed can save gallons of water and units of electricity. Conserving these resources also reduces pollution and carbon emissions.</h3></p>
+    <p><h3>Water and energy are precious resources. Simple habits like turning off taps, fixing leaks,
+       and switching off lights when not needed can save gallons of water and units of electricity.
+        Conserving these resources also reduces pollution and carbon emissions.</h3></p>
   </div>
 
   <div class="card">
     <h2>4.<mark> Recycle and reuse</mark></h2>
-    <p><h3>Recycling helps reduce the amount of waste that ends up in landfills. Reusing old items instead of throwing them away saves energy and raw materials. Whether it’s paper, glass, or clothes — every reused item is a step toward sustainability.</h3></p>
+    <p><h3>Recycling helps reduce the amount of waste that ends up in landfills.
+       Reusing old items instead of throwing them away saves energy and raw materials.
+        Whether it’s paper, glass, or clothes — every reused item is a step toward sustainability.</h3></p>
   </div>
 
   <div class="card">
     <h2>5.<mark> Spread awareness</mark></h2>
-    <p><h3>Change begins with knowledge. When we talk about environmental issues with friends, family, and classmates, we inspire others to act. Sharing tips, organizing clean-up drives, or making eco-posters can create a ripple effect of positive action.</h3></p>
+    <p><h3>Change begins with knowledge. When we talk about environmental issues with friends,
+       family, and classmates, we inspire others to act. Sharing tips, organizing clean-up drives,
+        or making eco-posters can create a ripple effect of positive action.</h3></p>
   </div>
 </section>
 

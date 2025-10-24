@@ -5,24 +5,112 @@
   <title>Save Earth Campaign</title>
   <link rel="stylesheet" href="style.css">
 <meta name="google-site-verification" content="p7a05Tsblr5bBnI9_d9KKkoxcaZ1Ju7Odaqo9FT67dw" />
+<style>
+   /* 🌿 Eco-Themed Homepage Style */
 
- <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #43a047; /* Eco Green */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  background-color: #66bb6a;
+  color: white;
+  padding: 10px 16px;
+  margin: 0 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #388e3c;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: #000000;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+main h2 {
+  color: #2e7d32;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.1em;
+  color: #4e342e;
+  line-height: 1.6;
+}
+
+.feature-box {
+  background-color: #f1f8e9;
+  border-left: 6px solid #8bc34a;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease-out;
+}
+
+footer {
+  background-color: #388e3c;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
-
-
 </head>
 <body>
   <header>
     <h1>🌍 Save Earth Campaign</h1>
     <p><b>Explore topics that help protect our planet</b></p>
-
-
     <nav>
        <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
@@ -34,57 +122,54 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+
+      <button><a href="donate.html">Donate</a></button>
     </nav>
   </header>
-
   <section class="dashboard">
     <div class="card">
       <h2>🌳 Deforestation</h2>
       <p><h4>Learn how cutting trees affects nature and how we can stop it.</h4></p>
       <a href="deforestation.html">Explore</a>
     </div>
-
+     <div class="card"><h2>🌱 Tips to Save Earth</h2><p><h4>Simple actions that make a big impact.</h4></p>
+      <a href="tips.html">Explore</a></div>
     <div class="card">
       <h2>🚯 Plastic Waste</h2>
       <p><h4>Understand the dangers of plastic and ways to reduce it.</h4></p>
       <a href="plastic.html">Explore</a>
     </div>
-
     <div class="card">
       <h2>🌡️ Climate Change</h2>
       <p><h4>Discover how global warming impacts life and what we can do.</h4></p>
       <a href="climate.html">Explore</a>
     </div>
-
     <div class="card">
       <h2>🐾 Wildlife Protection</h2>
       <p><h4>Protect endangered animals and preserve biodiversity.</h4></p>
       <a href="wildlife.html">Explore</a>
     </div>
-
     <div class="card">
       <h2>💧 Water Conservation</h2>
       <p><h4>Save every drop — learn how to conserve water daily.</h4></p>
       <a href="water.html">Explore</a>
     </div>
-
     <div class="card">
       <h2>🔄 Renewable Energy</h2>
       <p><h4>Switch to clean energy sources for a better future.</h4></p>
       <a href="energy.html">Explore</a>
     </div>
-  </section>
 
-  
+
+
+  </section>
 <video autoplay muted loop id="bg-video">
   <source src= "istockphoto-2167556773-640_adpp_is.mp4"type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-
   <footer>
-    <p>Made by Sarthak | Eco Awareness Project 💚</p>
+    <p>Made by Ayush | Eco Awareness Project 💚</p>
   </footer>
 </body>
 </html>

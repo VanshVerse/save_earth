@@ -5,17 +5,121 @@
   <title>Renewable Energy</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    mark {
-      background-color: black; /* Background color */
-      color: yellow; /* Text color */
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
+   /* Energy Page Heading Colors */
+h1 {
+  color: #fbc02d; /* Solar Yellow */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #388e3c; /* Eco Green */
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #0288d1; /* Sky Blue */
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: #6d4c41; /* Earth Brown */
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+
+/* Shared Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffde7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fbc02d;
+  color: #212121;
+  text-align: center;
+  padding: 20px;
+}
+
+nav a {
+  color: #fff9c4;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.energy-theme {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.animated-box {
+  background-color: #f1f8e9;
+  border-left: 8px solid #8bc34a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background-color: #dcedc8;
+  font-style: italic;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #f57f17;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-right: 8px;
+}
+
+.badge.urgent { background-color: #d32f2f; }
+.badge.warning { background-color: #f57c00; }
+.badge.alert { background-color: #7b1fa2; }
+.badge.caution { background-color: #0288d1; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
   </style>
 </head>
 <body>
   <header>
     <h1>🔄 Renewable Energy</h1>
+    <p>Clean energy for a clean future — solar, wind, and beyond</p>
+
     <nav> <button> <a href="index.html">Home</a></button>
       <button><a href="tips.html">Tips</a></button>
       <button><a href="gallery.html">Gallery</a>
@@ -26,29 +130,70 @@
       <button><a href="wildlife.html">Wildlife</a></button>
       <button><a href="water.html">Water</a></button>
       <button><a href="energy.html">Energy</a></button>
-      <button><mark><a href="donate.html">Donate</a></mark></button>
+      <button><a href="donate.html">Donate</a></button>
   </nav>
   </header>
 
-  <section class="info">
-    <h1>Why Renewable Energy?</h1>
-    <p><h3>Solar, wind, and hydro power are clean sources of energy. They reduce pollution and fight climate change.</h3></p>
 
-    <h1>What You Can Do</h1>
-    <ul>
-      <li><h3>Use solar panels if possible</h3></li>
-      <li><h3>Support green energy policies</h3></li>
-      <li><h3>Learn about sustainable technology</h3></li>
-    </ul>
-  </section>
+<b>
+  <section class="energy-theme">
+    <div class="animated-box">
+      <h2>🌞 What is Renewable Energy?</h2>
+      <p>
+        <span class="highlight">Renewable energy</span> comes from natural sources like <span class="highlight">sunlight</span>, <span class="highlight">wind</span>, and <span class="highlight">water</span>. Unlike coal or petrol, it doesn’t pollute and never runs out.
+      </p>
+    </div>
+
+    <div class="animated-box">
+      <h2>🔋 Types of Clean Energy</h2>
+      <ul>
+        <li><span class="badge urgent">Solar Power</span> – Energy from sunlight using panels</li>
+        <li><span class="badge warning">Wind Energy</span> – Turbines that spin with wind</li>
+        <li><span class="badge alert">Hydro Power</span> – Dams that generate electricity</li>
+        <li><span class="badge caution">Biogas</span> – Gas from waste and plants</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🌍 Why It Matters</h2>
+      <ul>
+        <li><span class="highlight">Less Pollution</span> – No smoke or harmful gases</li>
+        <li><span class="highlight">Saves Money</span> – Lower bills in long term</li>
+        <li><span class="highlight">Energy Security</span> – No need to import fuel</li>
+        <li><span class="highlight">Future Friendly</span> – Safe for next generations</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>🎓 School Projects</h2>
+      <ul>
+        <li><span class="highlight">Solar Model</span> – Show how panels work</li>
+        <li><span class="highlight">Energy Audit</span> – Check electricity use in school</li>
+        <li><span class="highlight">Poster Drive</span> – “Switch to Solar” slogans</li>
+        <li><span class="highlight">Quiz & Debate</span> – Discuss fossil vs renewable energy</li>
+      </ul>
+    </div>
+
+    <div class="animated-box">
+      <h2>✅ What You Can Do</h2>
+      <ul>
+        <li><span class="highlight">Switch off lights</span> when not needed</li>
+        <li><span class="highlight">Use LED bulbs</span> — save energy</li>
+        <li><span class="highlight">Support solar</span> — suggest panels at school/home</li>
+        <li><span class="highlight">Spread awareness</span> — talk about clean energy</li>
+      </ul>
+    </div>
+
+    <div class="animated-box quote-box">
+      <p>“The sun gives us power — let’s use it wisely and protect our planet.”</p>
+      
+    </div>
+  </section></b>
 
 <video autoplay muted loop id="bg-video">
   <source src= "istockphoto-1130253645-640_adpp_is.mp4"type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-
-
   <footer>
     <p><h3>Switch to clean energy 🔄</h3></p>
   </footer>
